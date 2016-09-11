@@ -1,0 +1,126 @@
+body {
+margin:0;
+}
+.header {
+  background-image: url("images/background_red.jpg");
+  background-size: cover;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header nav{
+  background-color: rgba(211, 53, 35, 0.2);
+  font-size: "14";
+  font-family: "Roboto",sans-serif;
+  text-align: right;
+  word-spacing: 10px;
+}
+.header a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+.header a:hover {
+    color: #770528;
+}
+.hero {
+  background-image: url("images/background_red.jpg");
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 70px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.hero a {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  text-decoration: none;
+}
+.hero p {
+  text-align: center;
+  color: #fff;
+  font-family: "Myriad Pro", sans-serif;
+
+}
+.services  {
+  background-color: #d33523;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  background-size: cover;
+}
+
+.graphicdesign {
+  background-color: #d33523;
+  text-align: center;
+  float: left;
+  max-width: 250px;
+  margin: 0;
+  padding: 1em;
+
+}
+.poligraphy {
+  background-color: #d33523;
+  text-align: center;
+  float: left;
+  max-width: 250px;
+  margin: 0;
+  padding: 1em;
+
+}
+.uiux{
+  background-color: #d33523;
+  text-align: center;
+  float: left;;
+  max-width: 250px;
+  margin: 0;
+  padding: 1em;
+}
+.fotoediting {
+  background-color: #d33523;
+  text-align: center;
+  float: left;;
+  max-width: 250px;
+  margin: 0;
+  padding: 1em;
+}
+
+.our-work {
+  background-image: url("images/background_green.jpg");
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.our-work a:hover{
+ border:1px solid #fff;
+}
+.our-work h3 {
+  font-size: 28px;
+}
+
+.ourteam {
+  background-color: #57aa68;
+  text-align: center;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.contact {
+background-image: url("images/background_blue.jpg");
+background-size: cover;
+}
