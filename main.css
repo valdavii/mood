@@ -1,9 +1,29 @@
+/* =================================
+  Base Styles
+==================================== */
+
+* {
+	box-sizing: content-box;
+}
 body {
 margin:0;
   font-family: "Roboto",sans-serif;
+  color: #fff;
 }
-header {
-  background-image: url("images/background_red.jpg");
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+/* ==================================== */
+
+.logo {
+	padding-left: 40px;
+}
+#main-header {
   background-size: cover;
   background-color: rgba(211, 53, 35, 0.2);
   position: fixed;
@@ -11,94 +31,146 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
   text-decoration: none;
   color: #fff;
 }
+.main-nav {
+	word-spacing: 20px;
+	float: right;
+	font-weight: lighter;
+	padding-top: 10px;
+}
+#main-header h1{
+	font-size: 14px;
+	font-weight: lighter;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+ #main-header img {
+	 float: left;
+	 padding-top: 10px;
+	 padding-bottom:10px;
+ }
+
 header nav{
   background-color: rgba(211, 53, 35, 0.2);
   font-size: "14";
-  font-family: "Roboto",sans-serif;
-  text-align: right;
-  word-spacing: 10px;
   text-decoration: none;
   color: #fff;
 }
 header a {
-  text-decoration: none;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
 }
-.header a:hover {
-    color: #770528;
+
+#main-header a:hover {
+
 }
+
+.name,
+.logo,
+.main-nav {
+	display: inline-block;;
+}
+
 .hero {
   background-image: url("images/background_red.jpg");
   background-size: cover;
   text-align: center;
   color: #fff;
-  padding-top: 70px;
-  padding-left: 200px;
-  padding-right: 200px;
+	padding: 90px 200px 30px 200px;
+
 }
 .hero a {
-  padding: 0;
-  border: 0;
-  background-color: transparent;
   text-decoration: none;
+	padding-right: 30px;
+	padding-bottom: 30px;
 }
 .hero p {
   text-align: center;
   color: #fff;
-  font-family: "Myriad Pro", sans-serif;
-
+  font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: lighter;
 }
-.services  {
+
+#services  {
   background-color: #d33523;
   padding-top: 10px;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
   color: #fff;
   text-align: center;
   font-family: "Myriad Pro", sans-serif;
   font-size: 18px;
   font-weight: normal;
-  background-size: cover;
+	position: relative;
+
 }
 
 .allservices {
   background-color: #d33523;
   text-align: center;
-  max-width: 290px;
-  margin: 0;
-  padding: 1em;
   font-weight: normal;
+
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
-.our-work {
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+				.graphic-design,
+				.poligraphy,
+				.uiux-design,
+				.video-editing {
+					display: inline-block;
+					width: 230px;
+					height: 340px;
+					padding-right: 30px;
+					float: right;
+					font-weight: lighter;
+					position: relative;
+				}
+
+#our-work {
   background-image: url("images/background_green.jpg");
   background-size: cover;
   text-align: center;
   color: #fff;
-  padding-top: 10px;
-  padding-bottom: 20px;
 }
-.our-work h3 {
-  font-size: 30px;
-  font-weight: lighter;
-}
-.our-work p{
+
+
+	}
+		#our-work-text h3{
+			font-size: 30px;
+		  font-weight: lighter;
+		}
+		.our-work-navigation a {
+			padding: 0 25px;
+			text-align: center;
+		}
+.our-work-text p{
   padding-left: 150px;
   padding-right: 150px;
-  font-weight: 70;
+	padding-bottom: 10px;
+  font-weight: lighter;
   font-size: 18px;
   font-family: "Roboto",sans-serif;
 }
-.our-work div {
-  padding-bottom: 50px;
-  padding-top: 50px;
+
+#our-work div {
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
-.our-work a {
+#our-work a {
   text-decoration: none;
   font-weight: normal;
   font-size: 14px;
@@ -106,17 +178,59 @@ header a {
   font-family: "Roboto",sans-serif;
 }
 
-.our-work a:hover{
- border:1px solid #fff;
+#our-work a:hover{
+ border:2px solid #fff;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
 }
-.our-work h3 {
+#our-work h3 {
   font-size: 28px;
 }
-table .our-work {
-  border-spacing:0;
-  border-collapse: collapse;
+
+	.our-work-gallery
+	{
+		margin: 0px;
+		padding: 0px;
+		margin-right: -1px;
+		overflow: hidden;
+	}
+
+	.picture
+	{
+		float: left;
+		width: 25%;
+		margin-right: -1px;
+		margin-top: -35px;
+		position: relative;
+	}
+
+
+
+	.picture-hover {
+		position: absolute;
+		background-color: rgba(87,170,104,.7);
+		width: 100%;
+		height: 300px;
+		visibility: hidden;
+	}
+
+
+.picture:hover .picture-hover {
+	visibility: visible;
 }
-.ourteam {
+
+	.picture img {
+		width: 100%;
+		height: 100%;
+	}
+
+.our-work-gallery img:hover {
+
+}
+
+
+#ourteam {
   background-color: #57aa68;
   text-align: center;
   background-size:auto;
@@ -125,15 +239,19 @@ table .our-work {
   font-family: "Roboto",sans-serif;
   padding-bottom: 28px;
 }
-.ourteam h4 {
+#ourteam h4 {
   font-size: 18px;
 }
-.ourteam p {
+#ourteam p {
   padding-left: 50px;
   padding-right: 50px;
   font-size: 18px;
 }
-.people {
+.ourteam-people
+ {
+	display: inline-block;
+	padding-right: 50px;
+	padding-top: 50px;
 }
 .people h4 {
   font-family: "Roboto",sans-serif;
@@ -146,7 +264,8 @@ table .our-work {
   font-weight: normal;
 }
 
-.contact {
+
+#contact {
 background-image: url("images/background_blue.jpg");
 background-size: cover;
 text-align: center;
@@ -162,44 +281,48 @@ ul {
 }
 
 form {
-
 	padding: 20px 0;
 	position: relative;
 }
-input{
+	input,
+	textarea
+ {
 		display: block;
 		appearance: none;
 		outline: 0;
-border-color: rgba(46, 45, 107, 0.5);
+		border: none;
 		background-color: rgba(46, 45, 107, 0.5);
 		width: 620px;
-
-
-		border-radius: 3px;
 		padding: 10px 15px;
 		margin: 0 auto 10px auto;
 		display: block;
 		font-size: 13px;
     font-weight: normal;
+		box-sizing: content-box;
+		color: #fff;
+		-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 	}
 
-    button{
-		appearance: none;
-		outline: 0;
+	#contact .button {
+		background: none;
+		border:1px solid #fff;
+	}
+
+	button:hover {
 		background-color: rgba(46, 45, 107, 0.5);
-		border: 0;
-		padding: 10px 15px;
-		color: #fff;
-		border-radius: 3px;
-		width: 620px;
-		cursor: pointer;
-  }
-.contact p {
+	}
+
+
+#contact p {
   text-align: center;
   font-size: 21px;
   font-weight: lighter;
   font-family: "Roboto",sans-serif;
 }
+
+
 
 footer {
   padding-top: 5px;
@@ -209,5 +332,24 @@ footer {
   font-family: "Muriad Pro",sans-serif;
   font-weight: normal;
   color: #fff;
+}
+/* =================================
+  Media Queries
+==================================== */
 
+@media (min-width: 769px) {
+	.name,
+	.logo,
+	.main-nav,
+	.main-nav li {
+		display: inline-block;
+	}
+
+	.graphic-design,
+	.poligraphy,
+	.uiux-design,
+	.video-editing {
+		display: inline-block;
+		width: 290px;
+	}
 }
