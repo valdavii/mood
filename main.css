@@ -96,6 +96,7 @@ header li {
   text-align: center;
   color: #fff;
 	padding: 90px 200px 30px 200px;
+	height: 500px;
 }
 .hero a {
   text-decoration: none;
@@ -144,11 +145,13 @@ header li {
   text-align: center;
   font-family: "Myriad Pro", sans-serif;
 	position: relative;
+	height: 500px;
 }
 
 .services h3 {
 		font-size: 28px;
 		font-weight: lighter;
+		padding:30px 0px 30px 0px;
 }
 
 .allservices {
@@ -180,6 +183,7 @@ header li {
   background-size: cover;
   text-align: center;
   color: #fff;
+	height: 890px;
 }
 
 		.our-work-text h3{
@@ -274,7 +278,8 @@ header li {
 		position: absolute;
 		background-color: rgba(87,170,104,.7);
 		width: 100%;
-		height: 290px;
+		height: 286px;
+		margin-top: -1px;
 		visibility: hidden;
 	}
 
@@ -299,15 +304,34 @@ header li {
 	text-align: center;
 	background-size: cover;
 	padding-top: 10px;
+	height: 780px;
+
+}
+.cost h2 {
+	padding: 110px 0px 60px 0px;
+	font-size: 28px;
+	font-weight: lighter;
+}
+.cost-nav {
+	padding-bottom: 30px;
 }
 .cost-nav a{
 	text-decoration: none;
 	padding: 0px 20px 0px 20px;
 	color: #fff;
 }
+.cost-nav a:hover{
+ border:2px solid #fff;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+    padding: 5px;
+}
+
 
 .price-table-container {
   background-color: #2a5759;
+
 }
 .price-table {
   margin: 0 auto;
@@ -316,7 +340,7 @@ header li {
 }
 .price-table td,
 .price-table th {
-  border-top: 1px solid #437c7e;
+  border-bottom: 1px solid #a2d5d7;
   vertical-align: middle;
   width: 25%;
   color: #fff;
@@ -324,13 +348,46 @@ header li {
 }
 .price-table th {
   text-transform: uppercase;
+	padding: 30px 0px 30px 0px;
+	font-size: 20px;
+	font-weight: normal;
 }
-
-
+.price-table td{
+	padding: 20px 0px 20px 0px;
+	font-weight: lighter;
+	font-size: 16px;
+	color: #a2d5d7;
+}
 .highlighted {
-   background: rgba(0, 0, 0, .5)
+   background: rgba(49, 103, 105, .5)
 }
 
+.cost-table-prices td{
+    font-size: 30px;
+    font-weight: normal;
+    color: #fff;
+    padding: 30px 0px 30px 0px;
+}
+.price-table tfoot td {
+	border: 0px;
+}
+.cost-table-price td {
+	font-size: 25px;
+	font-weight: normal;
+}
+.price-table button {
+	background: none;
+	border:1px solid #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 10px 40px 10px 40px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.price-table button:hover {
+	background-color: rgba(71, 133, 135, 0.5);
+}
 
 
 	/* =================================
@@ -344,6 +401,7 @@ header li {
   color: #fff;
 	padding: 10px 0px 28px 0px;
   font-family: "Roboto",sans-serif;
+	height: 650px;
 }
 
 .ourteam h3{
@@ -425,6 +483,7 @@ font-weight: normal;
 font-family: "Roboto",sans-serif;
 padding-bottom: 5px;
 padding-top: 10px;
+height: 750px;
 }
 
 .contact h3 {
