@@ -4,13 +4,8 @@
 
 * {
 	box-sizing: content-box;
+	line-height: 24px
 }
-body {
-margin:0;
-  font-family: "Roboto",sans-serif;
-  color: #fff;
-}
-
 a {
   text-decoration: none;
 }
@@ -35,12 +30,11 @@ ul {
 ==================================== */
 
 
-.logo {
-	padding-left: 40px;
-}
-#main-header {
+
+
+.main-header {
   background-size: cover;
-  background-color: rgba(211, 53, 35, 0.2);
+  background-color: rgba(211, 53, 35, 0.6);
   position: fixed;
   z-index: 100;
   top: 0;
@@ -48,40 +42,40 @@ ul {
   right: 0;
   text-decoration: none;
   color: #fff;
+	height: 70px;
 }
 .main-nav {
-	padding: 0px 5px 0px 5px;
+	padding: 0px 5px 10px 5px;
 	float: right;
 	font-weight: lighter;
 	position: relative;
 	top: -15px;
-	padding: 0;
 }
 
-#main-header h1{
+.main-header h1{
 	font-size: 14px;
 	font-weight: lighter;
-	padding-top: 20px;
+	padding-top: 15px;
 	padding-left: 10px;
 }
- #main-header img {
+ .main-header img {
 	 float: left;
-	 padding-top: 10px;
-
+	 padding-top: 5px;
+	 padding-left: 40px;
  }
 
 header a {
   color: #fff;
 	position: relative;
-	padding: 20px 10px 0px 10px;
+
 }
 header li {
 	position: relative;
-	padding: 30px 10px 0px 10px;
+	padding: 20px 10px 20px 10px;
 	border-top: 5px solid transparent;
 }
 
-#main-header li:hover {
+.main-header li:hover {
  border-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -90,9 +84,7 @@ header li {
 .main-nav {
 	display: inline-block;;
 }
-.logo {
-	height: auto;
-}
+
 /* =================================
   HERO
 ==================================== */
@@ -104,12 +96,12 @@ header li {
   text-align: center;
   color: #fff;
 	padding: 90px 200px 30px 200px;
-
 }
 .hero a {
   text-decoration: none;
 	padding-right: 30px;
 	padding-bottom: 30px;
+
 }
 .hero p {
   text-align: center;
@@ -120,7 +112,7 @@ header li {
 }
 
 
-.hero-nav button {
+.hero-nav .hero-button {
   border-radius: 100%;
   width: 8px;
   height: 8px;
@@ -129,7 +121,7 @@ header li {
   padding: 0;
   background-color: transparent;
 }
-.hero-nav button:hover {
+.hero-nav .hero-button:hover, .hero-nav .active{
   background-color: #FFF;
 }
 
@@ -144,28 +136,27 @@ header li {
 ==================================== */
 
 
-#services  {
+.services  {
   background-color: #d33523;
   padding-top: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   color: #fff;
   text-align: center;
   font-family: "Myriad Pro", sans-serif;
-  font-size: 18px;
-  font-weight: normal;
 	position: relative;
 }
 
-#services h3 {
+.services h3 {
 		font-size: 28px;
 		font-weight: lighter;
-	}
 }
 
 .allservices {
   background-color: #d33523;
   text-align: center;
   font-weight: normal;
+	font-size: 18px;
+  font-weight: lighter;
 }
 				.graphic-design,
 				.poligraphy,
@@ -179,18 +170,19 @@ header li {
 					font-weight: lighter;
 					position: relative;
 				}
+
 /* =================================
   OUR WORK GALLERY
 	==================================== */
 
-#our-work {
+.our-work {
   background-image: url("images/background_green.jpg");
   background-size: cover;
   text-align: center;
   color: #fff;
 }
 
-		#our-work-text h3{
+		.our-work-text h3{
 			font-size: 30px;
 		  font-weight: lighter;
 		}
@@ -207,11 +199,11 @@ header li {
   font-family: "Roboto",sans-serif;
 }
 
-#our-work div {
+.our-work div {
   padding-bottom: 10px;
   padding-top: 20px;
 }
-#our-work a {
+.our-work a {
   text-decoration: none;
   font-weight: normal;
   font-size: 14px;
@@ -219,17 +211,17 @@ header li {
   font-family: "Roboto",sans-serif;
 }
 
-#our-work a:hover{
+.our-work a:hover{
  border:2px solid #fff;
  -webkit-border-radius: 5px;
  -moz-border-radius: 5px;
  border-radius: 5px;
 }
-#our-work h3 {
+.our-work h3 {
   font-size: 28px;
 	font-weight: lighter;
 }
-.our-work-nav button {
+.our-work-nav .our-work-button {
   border-radius: 100%;
   width: 8px;
   height: 8px;
@@ -238,16 +230,16 @@ header li {
   padding: 0;
   background-color: transparent;
 }
-.our-work-nav button:hover {
+.our-work-nav .our-work-button:hover, .our-work-nav .active{
   background-color: #FFF;
 }
 
-	.our-work-gallery
-	{
+
+
+	.our-work-gallery {
 		margin: 0px;
 		padding: 0px;
 		margin-right: -1px;
-		overflow: hidden;
 	}
 
 .picture h4 {
@@ -265,8 +257,7 @@ header li {
 	margin: 0;
 
 }
-	.picture
-	{
+	.picture {
 		float: left;
 		width: 25%;
 		margin-right: -1px;
@@ -274,8 +265,8 @@ header li {
 		position: relative;
 	}
 	.picture .picture-text img {
-		width: 45px;
-		height: 45px;
+		width: 50px;
+		height: 50px;
 		padding-top: 65px;
 	}
 
@@ -283,24 +274,70 @@ header li {
 		position: absolute;
 		background-color: rgba(87,170,104,.7);
 		width: 100%;
-		height: 300px;
+		height: 290px;
 		visibility: hidden;
 	}
 
 
 .picture:hover .picture-hover {
 	visibility: visible;
+	cursor: pointer;
 }
 
 	.picture img {
 		width: 100%;
 		height: 100%;
+		margin:-1px;
 	}
+
+	/* =================================
+	  COST TABLE
+	==================================== */
+.cost {
+	background-image: url("images/background_green.jpg");
+	color: #fff;
+	text-align: center;
+	background-size: cover;
+	padding-top: 10px;
+}
+.cost-nav a{
+	text-decoration: none;
+	padding: 0px 20px 0px 20px;
+	color: #fff;
+}
+
+.price-table-container {
+  background-color: #2a5759;
+}
+.price-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80vw;
+}
+.price-table td,
+.price-table th {
+  border-top: 1px solid #437c7e;
+  vertical-align: middle;
+  width: 25%;
+  color: #fff;
+  text-align: center;
+}
+.price-table th {
+  text-transform: uppercase;
+}
+
+
+.highlighted {
+   background: rgba(0, 0, 0, .5)
+}
+
+
+
 	/* =================================
 	  OUR TEAM
 	==================================== */
 
-#ourteam {
+.ourteam {
   background-color: #57aa68;
   text-align: center;
   background-size:auto;
@@ -309,16 +346,16 @@ header li {
   font-family: "Roboto",sans-serif;
 }
 
-#ourteam h3{
+.ourteam h3{
 	font-size: 28px;
 	font-weight: lighter;
 }
 
-#ourteam p {
+.ourteam p {
   padding-left: 50px;
   padding-right: 50px;
 }
-.ourteam-navigation button {
+.ourteam-navigation .ourteam-button {
   border-radius: 100%;
   width: 8px;
   height: 8px;
@@ -327,16 +364,14 @@ header li {
   padding: 0;
   background-color: transparent;
 }
-.ourteam-navigation button:hover, .ourteam-navigation button.active {
+.ourteam-navigation .ourteam-button:hover, .ourteam-navigation .active{
   background-color: #FFF;
 }
 
-.ourteam-people
- {
+.ourteam-people {
 	display: inline-block;
 	padding: 50px 50px 0px 0px;
 	position: relative;
-
 }
 
 .people-hover {
@@ -348,6 +383,7 @@ header li {
 }
 .ourteam-people:hover .people-hover {
 	visibility: visible;
+	cursor: pointer;
 }
 .people-text p{
 	font-weight: lighter;
@@ -361,21 +397,25 @@ header li {
 }
 
 
-.people h4 {
+.ourteam-people h4 {
   font-family: "Roboto",sans-serif;
   font-size: 18px;
   font-weight: normal;
+	margin:0;
+	padding-top: 10px;
 }
-.people h5 {
+.ourteam-people h5 {
   font-family: "Roboto",sans-serif;
   font-size: 13px;
   font-weight: normal;
+	margin:0;
+	padding-bottom: 20px;
 }
 
 /* =================================
   CONTACT
 ==================================== */
-#contact {
+.contact {
 background-image: url("images/background_blue.jpg");
 background-size: cover;
 text-align: center;
@@ -387,7 +427,7 @@ padding-bottom: 5px;
 padding-top: 10px;
 }
 
-#contact h3 {
+.contact h3 {
 		font-size: 28px;
 		font-weight: lighter;
 	}
@@ -421,7 +461,7 @@ form {
     border-radius: 5px;
 	}
 
-	#contact .button {
+	.contact .button {
 		background: none;
 		border:1px solid #fff;
 	}
@@ -431,7 +471,7 @@ form {
 	}
 
 
-#contact p {
+.contact p {
   text-align: center;
   font-size: 21px;
   font-weight: lighter;

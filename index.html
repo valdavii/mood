@@ -11,16 +11,16 @@
 
   <body>
 
-  <header id="main-header">
+  <header class="main-header" >
 
       <img class="logo" src="images/minilogo.svg" width="50" height="59">
       <h1 class="name"> dizaina darbnīca </h1>
     <ul class="main-nav">
-      <li>  <a href="#hero"> Sākums </a> </li>
-      <li>  <a href="#services"> Pakalpojumi </a> </li>
-      <li>  <a href="#our-work"> Darbi </a> </li>
-      <li>  <a href="#ourteam"> Komanda </a> </li>
-      <li>  <a href="#contact"> Sazināties </a> </li>
+      <li>  <a href="#hero-nav"> Sākums </a> </li>
+      <li>  <a href="#services-nav"> Pakalpojumi </a> </li>
+      <li>  <a href="#our-work-nav"> Darbi </a> </li>
+      <li>  <a href="#ourteam-nav"> Komanda </a> </li>
+      <li>  <a href="#contact-nav"> Sazināties </a> </li>
     </ul>
 
     </header>
@@ -28,13 +28,15 @@
 
 <div class="container">
 
-  <div class="hero" id="hero">
+  <div class="hero">
+    <div class="hero-nav"></div>
+
       <img src="images/main-logo.svg" width="930" height="320">
 
       <div class="hero-nav">
-                    <button></button><br>
-                    <button></button><br>
-                    <button></button>
+                    <button class= "hero-button active"></button><br>
+                    <button class= "hero-button"></button><br>
+                    <button class= "hero-button"></button>
                 </div>
 
       <p>Mēs ticam, ka esam paveikuši savu darbu labi, ja klients iegūst efektīvu un viegli lietojamu instrumentu – vai tas būtu mājas lapas prototips, makets, logotips – kas palīdz sasniegt nepieciešamo rezultātu – pārdot preci, izglītot, izklaidēt vai informēt</p>
@@ -47,9 +49,11 @@
           <i class="fa fa-dribbble fa-2x" style="color: #ee9e92";></i> </a>
           <a href="https://www.behance.net/">
           <i class="fa fa-behance fa-2x" style="color: #ee9e92";></i> </a>
+<div class="services-nav"></div>
+
 </div>
 
-<div id="services">
+<div class="services">
   <h3>PAKALPOJUMI </h3>
       <div class="allservices clearfix">
           <div class="graphic-design">
@@ -73,20 +77,21 @@
           <P> Fotografējam produktus un produktu kompozīcijas, interjerus, objektus un vietas reklāmas vajadzībām. Veicam fotoapstrādi, kā arī video montāžu un apstrādi</p>
         </div>
     </div>
+    <div class="our-work-nav"></div>
   </div>
 
 
 
-  <div id="our-work" class="clearfix">
+  <div class="our-work clearfix">
         <div class="our-work-text">
           <h3>MŪSU DARBI</h3>
           <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
         </div>
 
         <div class="our-work-nav">
-                      <button></button>
-                      <button></button>
-                      <button></button>
+                      <button class="our-work-button active"></button>
+                      <button class="our-work-button"></button>
+                      <button class="our-work-button"></button>
                   </div>
 
         <div class="our-work-navigation">
@@ -188,15 +193,82 @@
    </div>
 </div>
 
-<div id="ourteam" class="clearfix">
+
+<div class="cost clearfix">
+<h2> CENRĀDIS</h2>
+<div class="cost-nav">
+  <a href=""> IDENTITĀTE </a>
+   <a href=""> WEB DIZAINS </a>
+   <a href="" > APLIKĀCIJU DIZAINS </a>
+   <a href=""> FOTOGRAFIJA </a>
+</div>
+<div class="price-table-container">
+<table class="price-table">
+  <thead>
+    <tr>
+      <th>Start</th>
+      <th>Basic</th>
+      <th class="highlighted">Pro</th>
+      <th>Super</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>
+        <button type="button">Sign up</button>
+      </td>
+      <td>
+        <button type="button">Sign up</button>
+      </td>
+      <td class="highlighted">
+        <button type="button">Sign up</button>
+      </td>
+      <td>
+        <button type="button">Sign up</button>
+      </td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>5 users</td>
+      <td>10 users
+      </td>
+      <td class="highlighted">100 users</td>
+      <td>Unlimited users</td>
+    </tr>
+    <tr>
+      <td>10 projects</td>
+      <td>100 projects</td>
+      <td class="highlighted">Unlimited projects</td>
+      <td>Unlimited projects</td>
+    </tr>
+    <tr>
+      <td>10GB amount of space</td>
+      <td>50GB amount of space</td>
+      <td class="highlighted">1TB amount of space</td>
+      <td>Unlimited amount of space</td>
+    </tr>
+    <tr>
+      <td> 19 &euro; </td>
+      <td> 29 &euro; </td>
+      <td class="highlighted"> 49 &euro;</td>
+      <td> 99 &euro;</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+
+<div class="ourteam clearfix">
   <div class="ourteam-text">
   <h3> MŪSU KOMANDA </h3>
   <p> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.</p>
 
   <div class="ourteam-navigation">
-                <button></button>
-                <button></button>
-                <button></button>
+                <button class="ourteam-button active"></button>
+                <button class="ourteam-button"></button>
+                <button class="ourteam-button"></button>
             </div>
 
     <div class="ourteam-people">
@@ -282,9 +354,10 @@
     </div>
 
   </div>
+  <div class="contact-nav"></div>
 </div>
 
-<div id="contact" class="clearfix">
+<div class="contact" class="clearfix">
 <h3> SAZINĀTIES </h3>
 <form>
 				<ul>
