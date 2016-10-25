@@ -107,102 +107,105 @@
                 <button class="page-nav-btn"></button>
                 <button class="page-nav-btn"></button>
             </nav>
+            
+            
+ <div>   
+     
+     <button>Viss</button>
+     
+     <script>
+         
+    var categories = [
+	"Identitāte",
+	"Web dizains",
+	"Aplikāciju dizains",
+	"Fotogrācija"
+];
+         document.write("<div><p>");
+         for (var i = 0; i < categories.length; i++){
+	document.write("<button data-workid='" + i + "'>" + categories[i] +"</button>");
+         }
+         document.write("</p></div>");
+     </script>
+     
+     
+     <script>
+             
+             var items = [
+	{
+		workid: 0,
+		title: "photo02",
+		slug: "photo02",
+		image: "images/photo-02.jpg"
+	},
+    {
+		workid: 1,
+		title: "photo03",
+		slug: "photo03",
+		image: "images/photo-03.jpg"
+	},
+     {
+		workid: 2,
+		title: "photo04",
+		slug: "photo04",
+		image: "images/photo-04.jpg"
+	},
+     {
+		workid: 3,
+		title: "photo05",
+		slug: "photo05",
+		image: "images/photo-05.jpg"
+	},
+     {
+		workid: 4,
+		title: "photo06",
+		slug: "photo06",
+		image: "images/photo-06.jpg"
+	},
+     {
+		workid: 5,
+		title: "photo01",
+		slug: "photo01",
+		image: "images/photo-01.jpg"
+	},
+    {
+		workid: 6,
+		title: "photo07",
+		slug: "photo01",
+		image: "images/photo-07.jpg"
+	},
+    {
+		workid: 7,
+		title: "photo08",
+		slug: "photo01",
+		image: "images/photo-08.jpg"
+	},
+    document.write("<div>");
+                 
+for (var i = 0; i < items.length; i++){
+	var href = "-"+ items[i].workid + "/" + items[i].image;
+	document.write(
+		'<div class="ourwork-gallery">\
+            <a class="ourwork-link" href="'+href+'">\
+                <img class="ourwork-picture" src="' + items[i].image + '">\
+                <div class="ourwork-gallery-hover">\
+                    <img class="ourwork-gallery-icon" src="images/ellipse.png">\
+                    <div class="ourwork-gallery-title">"' + items[i].title'" </div>\
+                    <div class="ourwork-gallery-text">Fotogrāfija</div>\
+                </div>\
+            </a>\
+        </div>'
+    );
+}
+document.write("</div>");
+                 
+     </script>
+     
 
-            <nav class="ourwork-nav">
-                <button class="ourwork-nav-link active">Viss</button>
-                <button class="ourwork-nav-link">Identitāte</button>
-                <button class="ourwork-nav-link">Web dizains</button>
-                <button class="ourwork-nav-link">Aplikāciju dizains</button>
-                <button class="ourwork-nav-link">Fotogrāfija</button>
-            </nav>
-        </div>
-
-        <div class="ourwork-gallery">
-            <a class="ourwork-link" href="">
-                <img class="ourwork-picture" src="images/photo-02.jpg">
-                <div class="ourwork-gallery-hover">
-                    <img class="ourwork-gallery-icon" src="images/ellipse.png">
-                    <div class="ourwork-gallery-title">Proin gravida nibh vel velit</div>
-                    <div class="ourwork-gallery-text">Fotogrāfija</div>
-                </div>
-            </a>
-        </div>
-
-        <div class="ourwork-gallery">
-            <a class="ourwork-link" href="">
-                <img class="ourwork-picture" src="images/photo-03.jpg">
-                <div class="ourwork-gallery-hover">
-                    <img class="ourwork-gallery-icon" src="images/ellipse.png">
-                    <div class="ourwork-gallery-title">Proin gravida nibh vel velit</div>
-                    <div class="ourwork-gallery-text">Fotogrāfija</div>
-                </div>
-            </a>
-        </div>
-
-        <div class="ourwork-gallery">
-            <a class="ourwork-link" href="">
-                <img class="ourwork-picture" src="images/photo-04.jpg">
-                <div class="ourwork-gallery-hover">
-                    <img class="ourwork-gallery-icon" src="images/ellipse.png">
-                    <div class="ourwork-gallery-title">Proin gravida nibh vel velit</div>
-                    <div class="ourwork-gallery-text">Fotogrāfija</div>
-                </div>
-            </a>
-        </div>
-
-        <div class="ourwork-gallery">
-            <a class="ourwork-link" href="">
-                <img class="ourwork-picture" src="images/photo-05.jpg">
-                <div class="ourwork-gallery-hover">
-                    <img class="ourwork-gallery-icon" src="images/ellipse.png">
-                    <div class="ourwork-gallery-title">Proin gravida nibh vel velit</div>
-                    <div class="ourwork-gallery-text">Fotogrāfija</div>
-                </div>
-            </a>
-        </div>
-
-        <div class="ourwork-gallery">
-            <a class="ourwork-link" href="">
-                <img class="ourwork-picture" src="images/photo-06.jpg">
-                <div class="ourwork-gallery-hover">
-                    <img class="ourwork-gallery-icon" src="images/ellipse.png">
-                    <div class="ourwork-gallery-title">Proin gravida nibh vel velit</div>
-                    <div class="ourwork-gallery-text">Fotogrāfija</div>
-                </div>
-            </a>
-        </div>
-
-        <div class="ourwork-gallery">
-            <a class="ourwork-link" href="">
-                <img class="ourwork-picture" src="images/photo-01.jpg">
-                <div class="ourwork-gallery-hover">
-                    <img class="ourwork-gallery-icon" src="images/ellipse.png">
-                    <div class="ourwork-gallery-title">Proin gravida nibh vel velit</div>
-                    <div class="ourwork-gallery-text">Fotogrāfija</div>
-                </div>
-            </a>
-        </div>
-
-        <div class="ourwork-gallery">
-            <a class="ourwork-link" href="">
-                <img class="ourwork-picture" src="images/photo-07.jpg">
-                <div class="ourwork-gallery-hover">
-                    <img class="ourwork-gallery-icon" src="images/ellipse.png">
-                    <div class="ourwork-gallery-title">Proin gravida nibh vel velit</div>
-                    <div class="ourwork-gallery-text">Fotogrāfija</div>
-                </div>
-            </a>
-        </div>
-
-        <div class="ourwork-gallery">
-            <a class="ourwork-link" href="">
-                <img class="ourwork-picture" src="images/photo-08.jpg">
-                <div class="ourwork-gallery-hover">
-                    <img class="ourwork-gallery-icon" src="images/ellipse.png">
-                    <div class="ourwork-gallery-title">Proin gravida nibh vel velit</div>
-                    <div class="ourwork-gallery-text">Fotogrāfija</div>
-                </div>
-            </a>
+</div>
+            
+            
+           
         </div>
     </section>
 

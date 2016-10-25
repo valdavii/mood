@@ -36,7 +36,9 @@ html, body {
   max-width: 1100px;
   margin: auto;
 }
-.hero-btn, .ourwork-nav-btn, .ourteam-btn {
+
+/* =====NAVIGATION BUTTONS======= */
+.hero-btn, .page-nav-btn {
   background: none;
   cursor: pointer;
   display: inline-block;
@@ -46,8 +48,20 @@ html, body {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
 }
-.hero-btn:hover, .hero-btn.active, .ourwork-nav-btn:hover, .ourwork-nav-btn.active, .ourteam-btn:hover, .ourteam-btn.active {
+.hero-btn:hover, .hero-btn.active,.page-nav-btn:hover, .page-nav-btn.active {
   background-color: #FFF;
+}
+.page-nav-btn {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#services,
+#ourwork,
+#ourteam,
+#contact {
+    position: absolute;
+    top: -70px;
 }
 /* =================================
   HEADER
@@ -145,6 +159,7 @@ html, body {
   margin: 8px auto;
 }
 
+
 /* =================================
   SERVICES
 ==================================== */
@@ -235,10 +250,6 @@ font-family: "Roboto" sans-serif;
   margin-bottom: 30px;
 }
 
-.ourwork-nav-btn {
-  margin-left: 8px;
-  margin-right: 8px;
-}
 .ourwork-gallery {
   color: #FFF;
   position: relative;
@@ -284,7 +295,7 @@ font-family: "Roboto" sans-serif;
 	  COST TABLE
 	==================================== */
 .cost {
-	background-image: url("images/background_green.svg");
+	background-image: url("images/background_green_overlay.svg");
 	position: relative;
 	background-size: cover;
   text-align: center;
@@ -381,20 +392,14 @@ th.highlighted, td.highlighted {
   width: 25%;
   float: left;
   padding-bottom: 20px;
+    padding-top: 20px;
 }
 .ourteam-people-photo {
   width: 100%;
   max-width: 260px;
   max-height: 290px;
 }
-.ourteam-nav-btn {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.ourteam-btn {
-  margin-left: 8px;
-  margin-right: 8px;
-}
+
 .ourteam-people-name {
   font-size: 18px;
   font-weight: 400;
@@ -515,6 +520,9 @@ resize: none;
   color: #FFF;
   padding: 10px;
 }
+.contact-submit-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 .contact-address {
   text-align: center;
   font-size: 20px;
@@ -546,22 +554,4 @@ FOOTER
   color: rgba(255, 255, 255, 0.5);
   padding: 15px;
 }
-/* =================================
-  Media Queries
-==================================== */
 
-@media (min-width: 769px) {
-	.name,
-	.logo,
-	.main-nav,
-	.main-nav li {
-		display: inline-block;
-	}
-
-	.graphic-design,
-	.poligraphy,
-	.uiux-design,
-	.video-editing {
-		display: inline-block;
-		width: 290px;
-	}
